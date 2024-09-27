@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-light-gray: #eaeaea;
+    --color-dark-purple: #5e2e53;
+    --color-light-purple: #e1a1e9;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn-button {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+  transition: transform 0.05s ease-in-out;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px #431567;
+}
