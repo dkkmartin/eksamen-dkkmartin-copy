@@ -7,7 +7,7 @@ async function Page() {
   const data = await getData('activities')
   return (
     <>
-      <HeaderTitle title="Aktiviteter" />
+      <HeaderTitle title="Aktivitet" />
       <div className="container pt-8">
         <section className="flex flex-col items-center gap-8 pb-24">
           {data.map((activity: Activity) => (
